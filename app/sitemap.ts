@@ -3,7 +3,7 @@ import { MetadataRoute } from "next";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://olden-era-guide.vercel.app";
+  const baseUrl = "https://olden-era-guide-tau.vercel.app";
   const pages = [
     "", "/factions", "/factions/temple", "/factions/necropolis", "/factions/grove",
     "/factions/hive", "/factions/schism", "/factions/dungeon", "/heroes",

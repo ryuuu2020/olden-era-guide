@@ -15,7 +15,7 @@ export default function PrivacyPage() {
 
       <h2>1. Introduction</h2>
       <p style={{ color: 'var(--color-text-muted)', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-        Welcome to Olden Era Guide (olden-era-guide.vercel.app). Your privacy is important to us. This Privacy Policy explains what information we collect, how we use it, and what rights you have in relation to your data when you visit our website.
+        Welcome to Olden Era Guide (olden-era-guide-tau.vercel.app). Your privacy is important to us. This Privacy Policy explains what information we collect, how we use it, and what rights you have in relation to your data when you visit our website.
       </p>
 
       <h2>2. Information We Collect</h2>

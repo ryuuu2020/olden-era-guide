@@ -15,7 +15,7 @@ export default function TermsPage() {
 
       <h2>1. Acceptance of Terms</h2>
       <p style={{ color: 'var(--color-text-muted)', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-        By accessing and using Olden Era Guide (olden-era-guide.vercel.app), you agree to be bound by these Terms of Use. If you do not agree with any part of these terms, please discontinue use of this website. These terms apply to all visitors and users of the site.
+        By accessing and using Olden Era Guide (olden-era-guide-tau.vercel.app), you agree to be bound by these Terms of Use. If you do not agree with any part of these terms, please discontinue use of this website. These terms apply to all visitors and users of the site.
       </p>
 
       <h2>2. Nature of the Website</h2>
