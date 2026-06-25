@@ -16,6 +16,24 @@ interface NewsItem {
 
 const newsItems: NewsItem[] = [
   {
+    date: "June 25, 2026",
+    title: "Community Tier List Shakeup: Dungeon and Grove Surge Post-Patch #9",
+    tag: "Meta Analysis",
+    summary:
+      "The competitive landscape has shifted dramatically in the week since Patches #8 and #9 dropped. Early data from community tournaments and ranked ladder matches reveals two factions emerging as the biggest winners.",
+    details:
+      "Dungeon has rocketed from mid-tier obscurity to a top-3 contender, driven largely by the Summon Avatar rework. With the new spell-power scaling replacing the old attack-based system, Dungeon's natural spellcaster synergy (Warlocks, Dark Priestesses) now benefits disproportionately from Avatar investment. A single level-3 Avatar behind a frontline of Minotaurs has become the standard Dungeon opener at Diamond+ rank. Grove is the other surprise beneficiary: the Hive nerfs opened space in the meta for Grove's creature-heavy strategies, and the 'Summon Sorcery' mastery replacement (+25% HP and damage to all summoned creatures) directly buffs Grove's Treant and Dryad summons. Meanwhile, Temple has fallen hardest — the Murmuring 'One More Time' buff was expected to help but the 2-turn cooldown reduction frequently leaves Temple heroes overextended without escape options. The Necropolis economy nerfs from Patch #8 have pushed the faction toward aggressive early-game strategies, with mixed tournament results. Community consensus: this is the healthiest Olden Era meta since Early Access launch, with 5 factions showing tournament-viable win rates above 48%.",
+  },
+  {
+    date: "June 25, 2026",
+    title: "Patches #8 and #9: Massive Skill Rework, Hive Overhaul, and Anti-Cheat Enforcement",
+    tag: "Patch Notes",
+    summary:
+      "A double-patch drop in early June reshapes Olden Era's competitive landscape. Patch #8 delivers a complete Summon Avatar rework, sweeping skill tree balance, and Hive faction adjustments. Patch #9 follows within 24 hours as a hotfix walking back several controversial changes.",
+    details:
+      "Unfrozen Studio released Patch #8 on June 1 with one of the most ambitious balance passes since Early Access launch. Summon Avatar has been completely redesigned: it now scales off spell power instead of attack, uses a fixed-hit-point system (2/3/4 hits per level) instead of conventional HP, and can no longer be healed or cloned. Murmuring subskill 'One More Time' now reduces cooldowns by 2 turns (up from 1), while 'Energy Burst' damage bonus increased from 5% to 15% but now only lasts until end of turn. Justice and Offense/Defense masteries saw net reductions, while Sorcery's 'Magic Influence' was replaced with 'Summon Sorcery' (+25% HP and damage to all summoned creatures). Hive received across-the-board creature count reductions in Arena mode, tier-based building cost increases, and hero specialization swaps for Tav and Paupa. Multiplayer integrity saw major enforcement: Alt+F4 disconnects now auto-assign losses, tactical-phase scouting exploits are patched, and free unit upgrade glitches are fixed — with disciplinary actions including temporary and permanent bans for repeat offenders. Patch #9 (June 2) walked back several over-nerfs and fine-tuned the Hive adjustments based on 24 hours of live data.",
+  },
+  {
     date: "April 30, 2026",
     title: "Olden Era Launches in Early Access",
     tag: "Launch",
