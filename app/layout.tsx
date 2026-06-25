@@ -101,6 +101,9 @@ function Header() {
         <a href="/tips">Tips</a>
         <a href="/news">News</a>
         <ThemeToggle />
+        <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', textDecoration: 'none', marginLeft: '0.5rem' }}>
+          ❤️ Support Us
+        </a>
       </nav>
     </header>
   );
@@ -124,6 +127,9 @@ function Footer() {
               </a>
               <a href="https://dispatch-guide-sigma.vercel.app" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)' }}>
                 Dispatch Guide
+              </a>
+              <a href="https://town-to-city-guide.vercel.app" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)' }}>
+                Town to City Guide
               </a>
             </div>
           </div>
