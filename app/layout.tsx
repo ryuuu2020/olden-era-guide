@@ -143,7 +143,7 @@ function Footer() {
             Support This Guide
           </h4>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', fontSize: '0.8rem' }}>
-            <a href="https://buymeacoffee.com/game-guides-hub" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>
+            <a href="https://buymeacoffee.com/solarpunkguides" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>
               ☕ Buy Me a Coffee
             </a>
             <a href="https://amazon.com/s?k=gaming+gear&tag=gameguidehub-20" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>
