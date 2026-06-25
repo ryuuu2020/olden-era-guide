@@ -37,6 +37,8 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <meta name="google-site-verification" content="google4cd6cdf221ea7b0b.html" />
+        {/* Google AdSense */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8925824244664340" crossOrigin="anonymous" />
         {/* Anti-flicker: apply dark mode before paint */}
         <script
           dangerouslySetInnerHTML={{
