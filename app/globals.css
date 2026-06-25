@@ -1,6 +1,22 @@
 @import "tailwindcss";
 
+/* ─── Light Mode (default) ──────────────────────────────────────── */
 :root {
+  --color-bg: #faf7f0;
+  --color-bg-card: #fffdf7;
+  --color-bg-elevated: #f0ead6;
+  --color-text: #1c1917;
+  --color-text-muted: #57534e;
+  --color-accent: #b45309;
+  --color-accent-hover: #92400e;
+  --color-accent-secondary: #6d28d9;
+  --color-border: #d6d3d1;
+  --color-danger: #dc2626;
+  --color-success: #15803d;
+}
+
+/* ─── Dark Mode ─────────────────────────────────────────────────── */
+.dark {
   --color-bg: #0a0e17;
   --color-bg-card: #111827;
   --color-bg-elevated: #1a2332;
@@ -99,10 +115,13 @@ td {
 
 /* Hero section */
 .hero-section {
-  background: linear-gradient(135deg, #0a0e17 0%, #1a1025 50%, #0f172a 100%);
+  background: linear-gradient(135deg, #faf7f0 0%, #f5f0e0 50%, #fef9e7 100%);
   padding: 4rem 2rem;
   text-align: center;
   border-bottom: 3px solid var(--color-accent);
+}
+.dark .hero-section {
+  background: linear-gradient(135deg, #0a0e17 0%, #1a1025 50%, #0f172a 100%);
 }
 
 /* Responsive grid */
