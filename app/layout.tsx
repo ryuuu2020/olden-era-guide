@@ -146,13 +146,7 @@ function Footer() {
             <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>
               ❤️ Support Us
             </a>
-            <a href="https://amazon.com/s?k=gaming+gear&tag=gameguidehub-20" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>
-              🎮 Shop Gaming Gear
-            </a>
           </div>
-          <p style={{ color: 'var(--color-text-muted)', fontSize: '0.7rem', marginTop: '0.5rem', opacity: 0.5 }}>
-            As an Amazon Associate we earn from qualifying purchases.
-          </p>
         </div>
       </div>
     </footer>
