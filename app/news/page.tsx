@@ -14,7 +14,17 @@ export default function NewsPage() {
         Latest information about Heroes of Might and Magic: Olden Era from Unfrozen Studio.
       </p>
 
-      <div style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-border)', borderRadius: '0.75rem', padding: '1.5rem', marginBottom: '1.5rem' }}>
+            <div style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-border)', borderRadius: '0.75rem', padding: '1.5rem', marginBottom: '1.5rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+          <span style={{ background: 'var(--color-accent)', color: '#000', padding: '0.15rem 0.5rem', borderRadius: '0.25rem', fontSize: '0.75rem', fontWeight: 600 }}>UPDATE</span>
+          <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>June 26, 2026</span>
+        </div>
+        <h3 style={{ marginBottom: '0.5rem' }}>Patch #10: Formation Saving & Bug Fixes</h3>
+        <p style={{ color: 'var(--color-text-muted)', lineHeight: 1.7 }}>
+          Unfrozen Studio deployed Patch #10 for Heroes of Might and Magic: Olden Era, introducing Tactics Phase formation saving — players can now save and load up to 5 custom unit formations per faction, dramatically reducing pre-battle setup time. This is especially valuable for multiplayer where the tactics timer is limited. The patch also fixes a rare crash when loading save files with Temple faction heroes above level 15, a visual glitch affecting Dungeon dual-attack animations, and a pathfinding issue on certain Arena maps. Olden Era is currently 25% off on Steam, and the community meta continues to evolve — early consensus places Necropolis and Temple in S/A tiers, while Hive remains a high-skill-cap niche pick. Unfrozen Studio confirmed additional factions and campaign acts are in development for future updates.
+        </p>
+      </div>
+<div style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-border)', borderRadius: '0.75rem', padding: '1.5rem', marginBottom: '1.5rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
           <span style={{ background: 'var(--color-accent)', color: '#000', padding: '0.15rem 0.5rem', borderRadius: '0.25rem', fontSize: '0.75rem', fontWeight: 600 }}>LAUNCH</span>
           <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>April 30, 2026</span>
