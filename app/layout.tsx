@@ -104,7 +104,7 @@ function Header() {
         <ThemeToggle />
         <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', textDecoration: 'none', marginLeft: '0.5rem' }}>
           ❤️ Support Us
-        </Link>
+        </a>
       </nav>
     </header>
   );
@@ -154,7 +154,7 @@ function Footer() {
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', fontSize: '0.8rem' }}>
             <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>
               ❤️ Support Us
-            </Link>
+            </a>
           </div>
         </div>
       </div>
