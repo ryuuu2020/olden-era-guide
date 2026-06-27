@@ -17,6 +17,16 @@ export default function NewsPage() {
             <div style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-border)', borderRadius: '0.75rem', padding: '1.5rem', marginBottom: '1.5rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
           <span style={{ background: 'var(--color-accent)', color: '#000', padding: '0.15rem 0.5rem', borderRadius: '0.25rem', fontSize: '0.75rem', fontWeight: 600 }}>UPDATE</span>
+          <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>June 27, 2026</span>
+        </div>
+        <h3 style={{ marginBottom: '0.5rem' }}>Patch #10 Deep Dive: Formation Saving, Avatar Nerf, Tournament Fixes</h3>
+        <p style={{ color: 'var(--color-text-muted)', lineHeight: 1.7 }}>
+          Unfrozen shipped Olden Era Patch #10 (v0.80.24) on June 18, delivering one of the most requested quality-of-life features: unit formations are now saved between battles in the tactics phase. Your army layout persists for the next fight against neutral enemies — no more repetitive repositioning. The patch fixes a tournament template bug where moving units in the final seconds could cause creatures to duplicate or vanish. The Ambassador's Word set effect, which was not triggering, is now fixed. On balance, the Avatar spell damage was reduced from scaling 20-20 to a flat 12-12 across all levels — Unfrozen calls this a temporary fix ahead of a larger balance update. Additional fixes address Hotseat UI errors, Necromancy tooltip bugs, and a connection loss window that now requires confirmation before exiting. Formation saving is per-hero and applies to standard neutral battles only.
+        </p>
+      </div>
+<div style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-border)', borderRadius: '0.75rem', padding: '1.5rem', marginBottom: '1.5rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+          <span style={{ background: 'var(--color-accent)', color: '#000', padding: '0.15rem 0.5rem', borderRadius: '0.25rem', fontSize: '0.75rem', fontWeight: 600 }}>UPDATE</span>
           <span style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>June 26, 2026</span>
         </div>
         <h3 style={{ marginBottom: '0.5rem' }}>Patch #10: Formation Saving & Bug Fixes</h3>
