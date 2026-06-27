@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import ThemeToggle from "@/components/ThemeToggle";
 import "./globals.css";
+import Link from "next/link";
 
 const GA_ID = "G-ET6778V62K";
 
@@ -37,8 +38,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <meta name="google-site-verification" content="google4cd6cdf221ea7b0b.html" />
-        {/* Google AdSense */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8925824244664340" crossOrigin="anonymous" />
+        <Script strategy="lazyOnload" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8925824244664340" crossOrigin="anonymous" />
         {/* Anti-flicker: apply dark mode before paint */}
         <script
           dangerouslySetInnerHTML={{
@@ -60,8 +60,9 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         {/* GA4 */}
-        <Script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+        <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
         <Script
+          strategy="lazyOnload"
           id="ga-init"
           dangerouslySetInnerHTML={{
             __html: `
@@ -89,21 +90,21 @@ function Header() {
       flexWrap: 'wrap',
       gap: '0.5rem',
     }}>
-      <a href="/" style={{ fontFamily: "'Cinzel', serif", fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-accent)', textDecoration: 'none' }}>
+      <Link href="/" style={{ fontFamily: "'Cinzel', serif", fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-accent)', textDecoration: 'none' }}>
         ⚔️ Olden Era Guide
-      </a>
+      </Link>
       <nav style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', flexWrap: 'wrap' }}>
-        <a href="/factions">Factions</a>
-        <a href="/heroes">Heroes</a>
-        <a href="/tier-list">Tier List</a>
-        <a href="/beginners-guide">Beginner Guide</a>
-        <a href="/combat">Combat</a>
-        <a href="/tips">Tips</a>
-        <a href="/news">News</a>
+        <Link href="/factions">Factions</Link>
+        <Link href="/heroes">Heroes</Link>
+        <Link href="/tier-list">Tier List</Link>
+        <Link href="/beginners-guide">Beginner Guide</Link>
+        <Link href="/combat">Combat</Link>
+        <Link href="/tips">Tips</Link>
+        <Link href="/news">News</Link>
         <ThemeToggle />
         <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', textDecoration: 'none', marginLeft: '0.5rem' }}>
           ❤️ Support Us
-        </a>
+        </Link>
       </nav>
     </header>
   );
@@ -136,10 +137,10 @@ function Footer() {
           <div>
             <h3 style={{ fontSize: '1.1rem', marginBottom: '0.75rem' }}>Site</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <a href="/about" style={{ color: 'var(--color-text-muted)' }}>About</a>
-              <a href="/privacy" style={{ color: 'var(--color-text-muted)' }}>Privacy Policy</a>
-              <a href="/terms" style={{ color: 'var(--color-text-muted)' }}>Terms of Use</a>
-              <a href="/faq" style={{ color: 'var(--color-text-muted)' }}>FAQ</a>
+              <Link href="/about" style={{ color: 'var(--color-text-muted)' }}>About</Link>
+              <Link href="/privacy" style={{ color: 'var(--color-text-muted)' }}>Privacy Policy</Link>
+              <Link href="/terms" style={{ color: 'var(--color-text-muted)' }}>Terms of Use</Link>
+              <Link href="/faq" style={{ color: 'var(--color-text-muted)' }}>FAQ</Link>
             </div>
           </div>
         </div>
@@ -153,7 +154,7 @@ function Footer() {
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', fontSize: '0.8rem' }}>
             <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>
               ❤️ Support Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>
