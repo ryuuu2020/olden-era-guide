@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
 @import "tailwindcss";
 
 /* ============================================
@@ -25,7 +25,7 @@
 body {
   background-color: #0d1117;
   color: #e6edf3;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Open Sans', system-ui, sans-serif;
 }
 
 ::selection {
@@ -66,3 +66,106 @@ html {
   outline-offset: 2px;
   border-radius: 2px;
 }
+
+/* ============================================
+   Header & Footer Styles
+   ============================================ */
+
+/* Header */
+.site-header {
+  background: var(--color-bg-card);
+  border-bottom: 2px solid var(--color-accent);
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.site-header-logo {
+  font-family: 'Cinzel', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.site-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.site-header-support {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--color-bg-card);
+  border-top: 2px solid var(--color-border);
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.site-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-footer-heading {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.site-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.site-footer-links a,
+.site-footer-links-link {
+  color: var(--color-text-muted);
+}
+
+.site-footer-text {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+  padding-top: 1rem;
+}
+
+.site-footer-support {
+  border-top: 1px solid var(--color-border);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.site-footer-support-heading {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.site-footer-support-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.site-footer-support-links a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+

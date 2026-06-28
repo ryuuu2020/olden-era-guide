@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { factions, factionTierList } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -10,11 +11,14 @@ export default function HomePage() {
   return (
     <>
       <div className="hero-section">
-        <img
-          src="/hero.jpg"
-          alt="Olden Era"
-          style={{ width: '100%', maxWidth: '900px', height: 'auto', maxHeight: '400px', objectFit: 'cover', borderRadius: '0.75rem', margin: '0 auto 1.5rem', display: 'block' }}
-        />
+        <div style={{ position: 'relative', width: '100%', maxWidth: '900px', height: '400px', margin: '0 auto 1.5rem', borderRadius: '0.75rem', overflow: 'hidden' }}>
+          <Image
+            src="/hero.jpg"
+            alt="Olden Era"
+            fill
+            style={{ objectFit: 'cover' }}
+          />
+        </div>
         <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>Heroes of Might &amp; Magic: Olden Era Guide</h1>
         <p style={{ fontSize: '1.25rem', color: 'var(--color-text-muted)', maxWidth: '700px', margin: '0 auto 2rem' }}>
           The complete strategy wiki for all 6 factions — Temple, Necropolis, Grove, Hive, Schism, and Dungeon.

@@ -34,7 +34,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
         <meta name="google-site-verification" content="google4cd6cdf221ea7b0b.html" />
@@ -80,20 +80,11 @@ export default function RootLayout({
 
 function Header() {
   return (
-    <header style={{
-      background: 'var(--color-bg-card)',
-      borderBottom: '2px solid var(--color-accent)',
-      padding: '0.75rem 2rem',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      flexWrap: 'wrap',
-      gap: '0.5rem',
-    }}>
-      <Link href="/" style={{ fontFamily: "'Cinzel', serif", fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-accent)', textDecoration: 'none' }}>
+    <header className="site-header">
+      <Link href="/" className="site-header-logo">
         ⚔️ Olden Era Guide
       </Link>
-      <nav style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', flexWrap: 'wrap' }}>
+      <nav className="site-header-nav">
         <Link href="/factions">Factions</Link>
         <Link href="/heroes">Heroes</Link>
         <Link href="/tier-list">Tier List</Link>
@@ -102,7 +93,7 @@ function Header() {
         <Link href="/tips">Tips</Link>
         <Link href="/news">News</Link>
         <ThemeToggle />
-        <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', textDecoration: 'none', marginLeft: '0.5rem' }}>
+        <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener noreferrer" className="site-header-support">
           ❤️ Support Us
         </a>
       </nav>
@@ -112,47 +103,42 @@ function Header() {
 
 function Footer() {
   return (
-    <footer style={{
-      background: 'var(--color-bg-card)',
-      borderTop: '2px solid var(--color-border)',
-      padding: '2rem',
-      marginTop: '3rem',
-    }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+    <footer className="site-footer">
+      <div className="site-footer-inner">
         <div className="grid-cards" style={{ marginBottom: '2rem' }}>
           <div>
-            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.75rem' }}>More Game Guides</h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <a href="https://menace-guide.vercel.app" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)' }}>
+            <h3 className="site-footer-heading">More Game Guides</h3>
+            <div className="site-footer-links">
+              <a href="https://menace-guide.vercel.app" target="_blank" rel="noopener noreferrer">
                 MENACE Guide
               </a>
-              <a href="https://dispatch-guide-sigma.vercel.app" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)' }}>
+              <a href="https://dispatch-guide-sigma.vercel.app" target="_blank" rel="noopener noreferrer">
                 Dispatch Guide
               </a>
-              <a href="https://town-to-city-guide.vercel.app" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)' }}>
+              <a href="https://town-to-city-guide.vercel.app" target="_blank" rel="noopener noreferrer">
                 Town to City Guide
               </a>
             </div>
           </div>
           <div>
-            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.75rem' }}>Site</h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <Link href="/about" style={{ color: 'var(--color-text-muted)' }}>About</Link>
-              <Link href="/privacy" style={{ color: 'var(--color-text-muted)' }}>Privacy Policy</Link>
-              <Link href="/terms" style={{ color: 'var(--color-text-muted)' }}>Terms of Use</Link>
-              <Link href="/faq" style={{ color: 'var(--color-text-muted)' }}>FAQ</Link>
+            <h3 className="site-footer-heading">Site</h3>
+            <div className="site-footer-links">
+              <Link href="/about">About</Link>
+              <Link href="/privacy">Privacy Policy</Link>
+              <Link href="/terms">Terms of Use</Link>
+              <Link href="/faq">FAQ</Link>
             </div>
           </div>
         </div>
-        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.875rem', textAlign: 'center', borderTop: '1px solid var(--color-border)', paddingTop: '1rem' }}>
+        <p className="site-footer-text">
           Olden Era Guide is a fan-made resource. Not affiliated with Ubisoft or Unfrozen Studio.
         </p>
-        <div style={{ borderTop: '1px solid var(--color-border)', marginTop: '1rem', paddingTop: '1rem' }}>
-          <h4 style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--color-text-muted)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+        <div className="site-footer-support">
+          <h4 className="site-footer-support-heading">
             Support This Guide
           </h4>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', fontSize: '0.8rem' }}>
-            <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>
+          <div className="site-footer-support-links">
+            <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener noreferrer">
               ❤️ Support Us
             </a>
           </div>
