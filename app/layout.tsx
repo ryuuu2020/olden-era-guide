@@ -54,6 +54,19 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Olden Era Guide",
+  "description": "The ultimate Olden Era strategy guide and wiki. Master exploration, combat, and faction building.",
+  "url": "https://olden-era-guide-tau.vercel.app"
+}`,
+          }}
+        />
       </head>
       <body className="min-h-screen flex flex-col antialiased">
         <Header />
@@ -129,6 +142,14 @@ function Footer() {
               <Link href="/faq">FAQ</Link>
             </div>
           </div>
+        </div>
+        {/* E-E-A-T: Sources & Last Updated */}
+        <div>
+          <h3 className="site-footer-heading">Sources</h3>
+          <p className="site-footer-text">
+            <strong>Sources:</strong> All guides are based on the <a href="https://store.steampowered.com/app/3105440/Olden_Era/" target="_blank" rel="noopener noreferrer" className="site-footer-link">Steam patch notes</a>, community testing, and gameplay experience.
+          </p>
+          <p className="site-footer-text">Last updated: June 2026</p>
         </div>
         <p className="site-footer-text">
           Olden Era Guide is a fan-made resource. Not affiliated with Ubisoft or Unfrozen Studio.
