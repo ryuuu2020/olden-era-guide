@@ -38,7 +38,7 @@ function getRoutes(): string[] {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://olden-era-guide.vercel.app';
+  const baseUrl = 'https://olden-era-guide-tau.vercel.app';
   const routes = getRoutes();
 
   const allRoutes = routes.includes('') ? routes : ['', ...routes];
