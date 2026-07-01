@@ -1,3 +1,17 @@
 {
-  "version": 2
+  "version": 2,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "olden-era-guide-tau.vercel.app"
+        }
+      ],
+      "destination": "https://oldenera.gguidehub.com/$1",
+      "permanent": true
+    }
+  ],
+  "cleanUrls": true
 }

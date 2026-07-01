@@ -3,6 +3,8 @@ import Script from "next/script";
 import ThemeToggle from "@/components/ThemeToggle";
 import "./globals.css";
 import Link from "next/link";
+import SchemaMarkup from '@/shared/SchemaMarkup';
+
 
 const GA_ID = "G-ET6778V62K";
 
@@ -11,6 +13,7 @@ export const metadata: Metadata = {
     default: "Olden Era Guide — Heroes of Might & Magic Strategy Wiki",
     template: "%s | Olden Era Guide",
   },
+    metadataBase: new URL("https://oldenera.gguidehub.com"),
   description:
     "Complete Heroes of Might and Magic: Olden Era guide. Faction tier lists, hero builds, unit stats, combat tactics, and beginner tips for all 6 factions.",
   keywords: [
